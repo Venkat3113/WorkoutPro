@@ -1,8 +1,20 @@
 // pages/Home.js
-import React from "react";
+import React, { useState } from "react";
+import { Box } from "@mui/material";
+
+import HeroBanner from "../Components/HeroBanner";
+import SearchExercises from "../Components/SearchExercises";  
+import Exercises from "../Components/Exercises";
 
 const Home = () => {
-  return <div>Home Page</div>;
+  return (
+    <Box>
+      <HeroBanner />
+      <SearchExercises />
+      <Exercises />
+    </Box>
+
+  )
 };
 
 export default Home;
